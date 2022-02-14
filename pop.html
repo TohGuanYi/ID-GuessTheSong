@@ -13,7 +13,7 @@
         <ul>
             <li><a href="mainpage.html">Home</a></li>
             <li><a href="leaderboard.html">Leaderboard</a></li>
-            <li><a href="#">About</a></li>
+            <li><a href="about.html">About</a></li>
         </ul>
     </nav>
     <hr>
@@ -39,11 +39,20 @@
             </div>
         </div>
     </div>
-    <ul class="flex-container">
-        <li class="flex-item">1</li>
-        <li class="flex-item">2</li>
-        <li class="flex-item">3</li>
-        <li class="flex-item">4</li>
-    </ul>
+    <div class="container">
+        <div id="questionContainer" class="hide">
+            <div id="question">Question</div>
+            <div id="answerButtons" class="buttonGrid">
+                <button class="button">Ans 1</button>
+                <button class="button">Ans 2</button>
+                <button class="button">Ans 3</button>
+                <button class="button">Ans 4</button>
+            </div>
+        </div>
+    </div>
+    <div class="controls">
+        <button id="startButton" class="startButton button">Start</button>
+        <button id="nextButton" class="nextButton button hide">Next</button>
+    </div>
 </body>
 </html>
