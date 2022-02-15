@@ -70,10 +70,11 @@ ul {
   .container{
     width: 800px;
     max-width: 80%;
-    background-color: white;
+    background-color: #C5C6C7;
     border-radius: 5px;
     padding: 10px;
     box-shadow: 0 0 10px 2px;
+    height: 250px;
   }
   
   .buttonGrid{
@@ -120,3 +121,10 @@ ul {
   .hide{
       display: none;
   }
+
+  .abt{
+    color: white;
+    text-align: center;
+    font-size:20px;
+  }
+  
