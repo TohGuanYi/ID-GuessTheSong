@@ -1,8 +1,8 @@
-startButton = document.getElementById('start-button')
-nextButton = document.getElementById('next-button')
-questionContaineraElement = document.getElementById('question-container')
+startButton = document.getElementById('startButton')
+nextButton = document.getElementById('nextButton')
+questionContaineraElement = document.getElementById('questionContainer')
 questionElement = document.getElementById('question')
-answerButtonElement = document.getElementById('answer-button')
+answerButtonElement = document.getElementById('answerButton')
 
 let shuffledQuestions, currentQuestionIndex
 
@@ -15,7 +15,7 @@ nextButton.addEventListener('click',() => {
 function startGame() {
     console.log('started')
     startButton.classList.add('hide')
-    shuffledQuestions = quesions.sort(() => Math.random() - .5)
+    shuffledQuestions = questions.sort(() => Math.random() - .5)
     currentQuestionIndex = 0
     questionContaineraElement.classList.remove('hide')
     nextQuestion()
@@ -29,8 +29,9 @@ function nextQuestion() {
 function showQuestion(question){
     questionElement.innerText = question.question
     question.answer.forEach(answer => {
-        const button = document.createElement('button')
-        button.innerText.add('button')
+        button = document.createElement('btn')
+        button.innerText = answer.text
+        button.classList.add('gameButton')
         if (answer.correct){
             button.dataset.correct = answer.correct
         }
@@ -51,7 +52,7 @@ function selectAnswer(i){
     selectButton = i.target
     correct = selectButton.dataset.correct
     setStatusClass(document.body, correct)
-    Array.from(answerButtonsElement.children).forEach(button => {
+    Array.from(answerButtonElement.children).forEach(button => {
         setStatusClass(button,button.dataset.correct)
     })
     if (shuffledQuestions.length>currentQuestionIndex + 1){
@@ -59,6 +60,7 @@ function selectAnswer(i){
     }
     else{
         startButton.innerText = 'Restart'
+        startButton.classList.remove('hide')
     }
 }
 
@@ -79,12 +81,48 @@ function clearStatusClass(element){
 
 questions = [
     {
-        question: "What is the song's name?",
+        question: "What is the name of the song?",
         answer: [
             { text: 'W', correct:true},
             { text: 'L', correct:false},
             { text: 'L', correct:false},
+            { text: 'L', correct:false}
+        ]
+    },
+    {
+        question: "Who is the artist of this song?",
+        answer: [
+            { text: 'L', correct:false},
+            { text: 'W', correct:true},
+            { text: 'L', correct:false},
+            { text: 'L', correct:false}
+        ]
+    },
+    {
+        question: "Which group sang this song?",
+        answer: [
+            { text: 'Wrong', correct:false},
+            { text: 'Wrong', correct:false},
+            { text: 'Wrong', correct:false},
+            { text: 'Correct', correct:true}
+        ]
+    },
+    {
+        question: "Why did the chicken cross the road?",
+        answer: [
+            { text: 'Dumb', correct:false},
+            { text: 'Stupid', correct:false},
+            { text: 'W', correct:true},
+            { text: 'Idiot', correct:false},
+        ]
+    },
+    {
+        question: "Why?",
+        answer: [
+            { text: 'L', correct:false},
+            { text: 'W', correct:true},
+            { text: 'L', correct:false},
             { text: 'L', correct:false},
         ]
-    }
+    },
 ]
