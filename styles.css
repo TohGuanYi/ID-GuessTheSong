@@ -1,0 +1,122 @@
+/* Main page css*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 15px 32px;
+    text-decoration: none;
+    font-size: 30px;
+  }
+  
+  li a:hover {
+    color:#66FCF1 ;
+  }
+
+  body{
+      background-color: #1F2833;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+  }
+
+  hr{
+      color: white;
+      margin: -10px;
+      margin-bottom: 15px;
+  }
+
+  h1{
+      color: #66FCF1;
+  }
+
+.my-row{
+    height: 300px;
+    background-color: black;
+}
+/* game page css*/
+:root{
+    --color-neutral: 200;
+    --color-wrong: 0;
+    --color-correct: 145;
+  }
+  section{
+    --color: var(--color-neutral);
+    padding: 0;
+    margin: 0;
+    display:flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  section.correct{
+    --color: var(--color-correct);
+  }
+  
+  section.wrong{
+    --color: var(--color-wrong);
+  }
+  
+  .container{
+    width: 800px;
+    max-width: 80%;
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 10px 2px;
+  }
+  
+  .buttonGrid{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+    margin: 20px 0;
+  }
+  
+  .gameButton, .startButton, .nextButton{
+    --color: var(--color-neutral);
+    border: 1px solid hsl(var(--color), 100%, 30%);
+    background-color: hsl(var(--color), 100%, 50%);
+    border-radius: 10px;
+    padding: 5px 10px;
+    color:white;
+    outline: none;
+  }
+  
+  .gameButton:hover, .startButton:hover, .nextButton:hover{
+    border-color: black;
+  }
+  
+  .gameButton.correct{
+    --color: var(--color-correct);
+  }
+  
+  .gameButton.wrong{
+    --color: var(--color-wrong);
+  }
+
+  .startButton, .nextButton{
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px 20px;
+  }
+
+  .controls{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .hide{
+      display: none;
+  }
