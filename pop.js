@@ -81,48 +81,49 @@ function clearStatusClass(element){
 
 questions = [
     {
-        question: "What is the name of the song?",
+        question: 'Which artist sang this song?', /*Blinding Lights*/
         answer: [
-            { text: 'W', correct:true},
-            { text: 'L', correct:false},
-            { text: 'L', correct:false},
-            { text: 'L', correct:false}
+            { text: 'The Weekend', correct:true},
+            { text: 'Shawn Mendes', correct:false},
+            { text: 'Harry Styles', correct:false},
+            { text: 'Ed Sheeran', correct:false}
         ]
     },
     {
-        question: "Who is the artist of this song?",
+        question: "What is the name of the song?", /*Levitating*/
         answer: [
-            { text: 'L', correct:false},
-            { text: 'W', correct:true},
-            { text: 'L', correct:false},
-            { text: 'L', correct:false}
+            { text: 'Dont Start Now', correct:false},
+            { text: 'Levitating', correct:true},
+            { text: 'Physical', correct:false},
+            { text: 'Break My Heart', correct:false}
         ]
     },
     {
-        question: "Which group sang this song?",
+        question: "Which artist sang this song?", /*Stay*/
         answer: [
-            { text: 'Wrong', correct:false},
-            { text: 'Wrong', correct:false},
-            { text: 'Wrong', correct:false},
-            { text: 'Correct', correct:true}
+            { text: 'Justin Timberlake', correct:false},
+            { text: 'Bruno Mars', correct:false},
+            { text: 'Charlie Puth', correct:false},
+            { text: 'Justin Bieber', correct:true}
         ]
     },
     {
-        question: "Why did the chicken cross the road?",
+        question: "Which artist sang this song?", /*Watermelon Sugar*/
         answer: [
-            { text: 'Dumb', correct:false},
-            { text: 'Stupid', correct:false},
-            { text: 'W', correct:true},
-            { text: 'Idiot', correct:false},
+            { text: 'John Legend', correct:false},
+            { text: 'Nick Jonas', correct:false},
+            { text: 'Harry Styles', correct:true},
+            { text: 'Zayn', correct:false},
         ]
     },
     {
-        question: "Why?",
+        question: "Which artist sang this song?", /*Good 4 u*/
         answer: [
-            { text: 'L', correct:false},
-            { text: 'W', correct:true},
-            { text: 'L', correct:false},
-            { text: 'L', correct:false},
+            { text: 'Ariana Grande', correct:false},
+            { text: 'Olivia Rodrigo', correct:true},
+            { text: 'Taylor Swift', correct:false},
+            { text: 'Billie Eilish', correct:false},
+
         ]
     },
 ]
