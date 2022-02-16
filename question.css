@@ -84,7 +84,7 @@ ul {
     margin: 20px 0;
   }
   
-  .gameButton, .startButton, .nextButton{
+  .gameButton, .startButton, .nextButton, .homeButton{
     --color: var(--color-neutral);
     border: 1px solid hsl(var(--color), 100%, 30%);
     background-color: hsl(var(--color), 100%, 50%);
@@ -92,9 +92,10 @@ ul {
     padding: 5px 10px;
     color:white;
     outline: none;
+    cursor: pointer;
   }
   
-  .gameButton:hover, .startButton:hover, .nextButton:hover{
+  .gameButton:hover, .startButton:hover, .nextButton:hover, .homeButton:hover{
     border-color: black;
   }
   
@@ -106,7 +107,7 @@ ul {
     --color: var(--color-wrong);
   }
 
-  .startButton, .nextButton{
+  .startButton, .nextButton, .homeButton{
     font-size: 1.5rem;
     font-weight: bold;
     padding: 10px 20px;
