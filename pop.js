@@ -1,10 +1,17 @@
 startButton = document.getElementById('startButton')
 nextButton = document.getElementById('nextButton')
+homeButton = document.getElementById('homeButton')
 questionContaineraElement = document.getElementById('questionContainer')
 questionElement = document.getElementById('question')
 answerButtonElement = document.getElementById('answerButton')
+lottieTimer = document.querySelector("lottie-player");
+
+points = document.getElementById('points')
+pointsCount = 0
+points.innerText = pointsCount
 
 let shuffledQuestions, currentQuestionIndex
+
 
 startButton.addEventListener('click',startGame)
 nextButton.addEventListener('click',() => {
@@ -23,6 +30,7 @@ function startGame() {
 
 function nextQuestion() {
     resetState()
+    lottieTimer.play()
     showQuestion(shuffledQuestions[currentQuestionIndex])
 }
 
@@ -32,6 +40,7 @@ function showQuestion(question){
         button = document.createElement('btn')
         button.innerText = answer.text
         button.classList.add('gameButton')
+        lottieTimer.addEventListener('complete', selectAnswer)  //Timers up
         if (answer.correct){
             button.dataset.correct = answer.correct
         }
@@ -49,8 +58,13 @@ function resetState(){
 }
 
 function selectAnswer(i){
+    lottieTimer.stop()
     selectButton = i.target
     correct = selectButton.dataset.correct
+    if (correct){
+        pointsCount += 100
+        points.innerText = pointsCount
+    }
     setStatusClass(document.body, correct)
     Array.from(answerButtonElement.children).forEach(button => {
         setStatusClass(button,button.dataset.correct)
@@ -59,8 +73,7 @@ function selectAnswer(i){
         nextButton.classList.remove('hide')
     }
     else{
-        startButton.innerText = 'Restart'
-        startButton.classList.remove('hide')
+        homeButton.classList.remove('hide')
     }
 }
 
@@ -113,7 +126,7 @@ questions = [
             { text: 'John Legend', correct:false},
             { text: 'Nick Jonas', correct:false},
             { text: 'Harry Styles', correct:true},
-            { text: 'Zayn', correct:false},
+            { text: 'Zayn', correct:false}
         ]
     },
     {
@@ -122,8 +135,7 @@ questions = [
             { text: 'Ariana Grande', correct:false},
             { text: 'Olivia Rodrigo', correct:true},
             { text: 'Taylor Swift', correct:false},
-            { text: 'Billie Eilish', correct:false},
-
+            { text: 'Billie Eilish', correct:false}
         ]
     },
 ]
