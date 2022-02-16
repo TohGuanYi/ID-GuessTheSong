@@ -10,8 +10,7 @@ points = document.getElementById('points')
 pointsCount = 0
 points.innerText = pointsCount
 
-let shuffledQuestions, currentQuestionIndex
-
+let shuffledQuestions, currentQuestionIndex, music
 
 startButton.addEventListener('click',startGame)
 nextButton.addEventListener('click',() => {
@@ -35,6 +34,8 @@ function nextQuestion() {
 }
 
 function showQuestion(question){
+    music = new Audio(question.song);
+    music.play()
     questionElement.innerText = question.question
     question.answer.forEach(answer => {
         button = document.createElement('btn')
@@ -59,6 +60,7 @@ function resetState(){
 
 function selectAnswer(i){
     lottieTimer.stop()
+    music.pause()
     selectButton = i.target
     correct = selectButton.dataset.correct
     if (correct){
@@ -94,6 +96,7 @@ function clearStatusClass(element){
 
 questions = [
     {
+        song: 'songs/pop/BlindingLights.mp3',
         question: 'Which artist sang this song?', /*Blinding Lights*/
         answer: [
             { text: 'The Weekend', correct:true},
@@ -103,6 +106,7 @@ questions = [
         ]
     },
     {
+        song: 'songs/pop/Levitating.mp3',
         question: "What is the name of the song?", /*Levitating*/
         answer: [
             { text: 'Dont Start Now', correct:false},
@@ -112,6 +116,7 @@ questions = [
         ]
     },
     {
+        song: 'songs/pop/Stay.mp3',
         question: "Which artist sang this song?", /*Stay*/
         answer: [
             { text: 'Justin Timberlake', correct:false},
@@ -121,6 +126,7 @@ questions = [
         ]
     },
     {
+        song: 'songs/pop/WatermelonSugar.mp3',
         question: "Which artist sang this song?", /*Watermelon Sugar*/
         answer: [
             { text: 'John Legend', correct:false},
@@ -130,6 +136,7 @@ questions = [
         ]
     },
     {
+        song: 'songs/pop/Good4u.mp3',
         question: "Which artist sang this song?", /*Good 4 u*/
         answer: [
             { text: 'Ariana Grande', correct:false},
