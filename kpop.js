@@ -145,4 +145,54 @@ questions = [
             { text: 'Stray Kids', correct:false}
         ]
     },
+    {
+        song: 'songs/KPop/20cm.mp3',
+        question: "Which artist sang this song?", /*20cm*/
+        answer: [
+            { text: 'ENHYPEN', correct:false},
+            { text: 'TXT', correct:true},
+            { text: 'SEVENTEEN', correct:false},
+            { text: 'BTOB', correct:false}
+        ]
+    },
+    {
+        song: 'songs/KPop/LoveScenario.mp3',
+        question: "What is the name of this song?", /*Love Scenario*/
+        answer: [
+            { text: 'IDOL', correct:false},
+            { text: 'Blood, Sweat and Tears', correct:false},
+            { text: 'Love Scenario', correct:true},
+            { text: 'Airplane', correct:false}
+        ]
+    },
+    {
+        song: 'songs/KPop/FANCY.mp3',
+        question: "Which artist sang this song?", /*FANCY*/
+        answer: [
+            { text: 'TWICE', correct:true},
+            { text: 'TXT', correct:false},
+            { text: 'BLACKPINK', correct:false},
+            { text: 'ATEEZ', correct:false}
+        ]
+    },
+    {
+        song: 'songs/KPop/ImAB.mp3',
+        question: "Which artist sang this song?", /*I'm A B*/
+        answer: [
+            { text: 'Hwa Sa', correct:true},
+            { text: 'BTS', correct:false},
+            { text: 'CHUNG HA', correct:false},
+            { text: 'IU', correct:false}
+        ]
+    },
+    {
+        song: 'songs/KPop/Psycho.mp3',
+        question: "What is the name of this song?", /*Psycho*/
+        answer: [
+            { text: 'Russian Roulette', correct:false},
+            { text: 'Red Flavor', correct:false},
+            { text: 'Psycho', correct:true},
+            { text: 'BOOMBAYAH', correct:false}
+        ]
+    },
 ]

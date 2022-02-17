@@ -145,4 +145,54 @@ questions = [
             { text: 'Billie Eilish', correct:false}
         ]
     },
+    {
+        song: 'songs/Pop/CheatingOnYou.mp3',
+        question: "What is the name of the song?", /*Cheating On You*/
+        answer: [
+            { text: 'See You Again', correct:false},
+            { text: 'Cheating On You', correct:true},
+            { text: 'Attention', correct:false},
+            { text: 'Done For Me', correct:false}
+        ]
+    },
+    {
+        song: 'songs/Pop/BadHabits.mp3',
+        question: "What is the name of the song?", /*Bad Habits*/
+        answer: [
+            { text: 'Perfect', correct:false},
+            { text: 'Bad Habits', correct:true},
+            { text: 'Shape Of You', correct:false},
+            { text: 'Photograph', correct:false}
+        ]
+    },
+    {
+        song: 'songs/Pop/OverAgain.mp3',
+        question: "What is the name of the song?", /*Over Again*/
+        answer: [
+            { text: 'Last First Kiss', correct:false},
+            { text: 'DONDA', correct:false},
+            { text: 'One Thing', correct:false},
+            { text: 'Over Again', correct:true}
+        ]
+    },
+    {
+        song: 'songs/Pop/StuckWithU.mp3',
+        question: "What is the name of the song?", /*StuckWithU*/
+        answer: [
+            { text: 'Sorry', correct:false},
+            { text: 'Stuck With U', correct:true},
+            { text: 'Bad Blood', correct:false},
+            { text: 'Love Yourself', correct:false}
+        ]
+    },
+    {
+        song: 'songs/Pop/IntoYou.mp3',
+        question: "Which artist sang this song?", /*Into You*/
+        answer: [
+            { text: 'Ariana Grande', correct:true},
+            { text: 'Nicki Minaj', correct:false},
+            { text: 'Taylor Swift', correct:false},
+            { text: 'Carly Rae Jepsen', correct:false}
+        ]
+    },
 ]
