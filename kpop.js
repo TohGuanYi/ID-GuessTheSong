@@ -96,53 +96,53 @@ function clearStatusClass(element){
 
 questions = [
     {
-        song: 'songs/Pop/BlindingLights.mp3',
-        question: 'Which artist sang this song?', /*Blinding Lights*/
+        song: 'songs/KPop/Blueming.mp3',
+        question: 'Which artist sang this song?', /*Blueming*/
         answer: [
-            { text: 'The Weekend', correct:true},
-            { text: 'Shawn Mendes', correct:false},
-            { text: 'Harry Styles', correct:false},
-            { text: 'Ed Sheeran', correct:false}
+            { text: 'IU', correct:true},
+            { text: 'Taeyeon', correct:false},
+            { text: 'Blackpink', correct:false},
+            { text: 'HWASA', correct:false}
         ]
     },
     {
-        song: 'songs/Pop/Levitating.mp3',
-        question: "What is the name of the song?", /*Levitating*/
+        song: 'songs/KPop/AsIfItsYourLast.mp3',
+        question: "What is the name of the song?", /*As If It's Your Last*/
         answer: [
-            { text: 'Dont Start Now', correct:false},
-            { text: 'Levitating', correct:true},
-            { text: 'Physical', correct:false},
-            { text: 'Break My Heart', correct:false}
+            { text: 'DDU-DU DDU-DU', correct:false},
+            { text: 'As If It\'s Your Last', correct:true},
+            { text: 'Playing With Fire', correct:false},
+            { text: 'Ice Cream', correct:false}
         ]
     },
     {
-        song: 'songs/Pop/Stay.mp3',
-        question: "Which artist sang this song?", /*Stay*/
+        song: 'songs/KPop/FakeLove.mp3',
+        question: "Which artist sang this song?", /*Fake Love*/
         answer: [
-            { text: 'Justin Timberlake', correct:false},
-            { text: 'Bruno Mars', correct:false},
-            { text: 'Charlie Puth', correct:false},
-            { text: 'Justin Bieber', correct:true}
+            { text: 'EXO', correct:false},
+            { text: 'SEVENTEEN', correct:false},
+            { text: 'ATEEZ', correct:false},
+            { text: 'BTS', correct:true}
         ]
     },
     {
-        song: 'songs/Pop/WatermelonSugar.mp3',
-        question: "Which artist sang this song?", /*Watermelon Sugar*/
+        song: 'songs/KPop/GangnamStyle.mp3',
+        question: "What is the name of this song?", /*Gangnam Style*/
         answer: [
-            { text: 'John Legend', correct:false},
-            { text: 'Nick Jonas', correct:false},
-            { text: 'Harry Styles', correct:true},
-            { text: 'Zayn', correct:false}
+            { text: 'Gentleman', correct:false},
+            { text: 'MOVE', correct:false},
+            { text: 'Gangnam Style', correct:true},
+            { text: 'Airplane', correct:false}
         ]
     },
     {
-        song: 'songs/Pop/Good4u.mp3',
-        question: "Which artist sang this song?", /*Good 4 u*/
+        song: 'songs/KPop/PolaroidLove.mp3',
+        question: "Which artist sang this song?", /*PolaroidLove*/
         answer: [
-            { text: 'Ariana Grande', correct:false},
-            { text: 'Olivia Rodrigo', correct:true},
-            { text: 'Taylor Swift', correct:false},
-            { text: 'Billie Eilish', correct:false}
+            { text: 'BTS', correct:false},
+            { text: 'ENHYPEN', correct:true},
+            { text: 'NCT', correct:false},
+            { text: 'Stray Kids', correct:false}
         ]
     },
 ]
