@@ -36,6 +36,7 @@ ul {
 
   h1{
       color: #66FCF1;
+      height: -200px;
   }
 
 .my-row{
@@ -54,7 +55,7 @@ ul {
     margin: 0;
     display:flex;
     width: 100vw;
-    height: 100vh;
+    height: 50vh;
     justify-content: center;
     align-items: center;
   }

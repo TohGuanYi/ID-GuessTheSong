@@ -61,6 +61,7 @@ img{
   width: 600px;
   max-width: 80%;
   margin: 20px -40px;
+  border-radius: 50px;
 }
 /*Category css */
 .heading2{
