@@ -114,7 +114,8 @@ $(document).ready(function () {
             $("#total-contacts").html(response.length);
         });
     }
-
+            //[STEP 10]: Deletion of content
+            //by using the id, it will delete the content of that particular row
     $("#points-list").on("click", ".delete", function (e) {
         let id = $(this).data("id");
         deleteScore(id);
